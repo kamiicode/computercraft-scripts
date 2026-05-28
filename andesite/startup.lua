@@ -2,7 +2,7 @@ local CHAT_COMPUTER_ID = 24
 
 local inventory_managers = {
     {manager=peripheral.wrap("inventory_manager_2"), side="right"},
-    {manager=peripheral.wrap("inventory_manager_3"), side="left"}
+    {manager=peripheral.wrap("inventory_manager_4"), side="left"}
 }
 
 local function waitForInventoryOwner()
@@ -14,7 +14,7 @@ local function waitForInventoryOwner()
       end
     end
 
-    print("Both inventories misses an owner.\nPress ENTER to try again")
+    write("All inventory managers misses an owner.\nPress ENTER to try again")
     read()
   end
 end
